@@ -7,8 +7,13 @@ import * as Aos from 'aos';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'portfolio-v3';
+  title = '・アニス・';
   ngOnInit(): void {
     Aos.init();
   }
+  // hide: boolean = true;
+
+  // func() {
+  //   this.hide = !this.hide;
+  // }
 }

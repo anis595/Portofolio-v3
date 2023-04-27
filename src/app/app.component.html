@@ -1,4 +1,6 @@
-<nav class="nav-bar fixed z-50 h-20 w-full bg-black font-roboto pt-2">
+<nav
+  class="nav-bar fixed z-50 h-20 w-full bg-black font-roboto pt-2 navigation"
+>
   <div
     class="tablet:flex tablet:justify-between tablet:items-center phone:content-baseline md:container"
   >
@@ -6,7 +8,7 @@
       <span
         class="cursor-pointer text-white text-5xl whitespace-nowrap font-black ml-0 phone:text-3xl tablet:text-5xl"
       >
-        <p>・アニス・</p>
+        <p>{{ title }}</p>
       </span>
       <span class="mobile-menu-button block cursor-pointer tablet:hidden pr-6">
         <img src="assets/menu-hamburger.svg" alt="icon burger" />
@@ -14,7 +16,8 @@
     </div>
 
     <ul
-      class="pr-4 uppercase bg-opacity-80 text-center mobile-menu wrapper-slide -mx-4 cursor-pointer bg-black text-base font-semibold text-white tablet:flex tablet:items-center tablet:justify-center tablet:bg-transparent tablet:py-0 tablet:pl-0 hidden"
+      id=""
+      class="hidden pr-4 uppercase bg-opacity-80 text-center mobile-menu wrapper-slide -mx-4 cursor-pointer bg-black text-base font-semibold text-white tablet:flex tablet:items-center tablet:justify-center tablet:bg-transparent tablet:py-0 tablet:pl-0"
     >
       <li
         class="menu-li relative mx-4 my-6 tablet:my-0 button type3 whitespace-nowrap"
@@ -50,7 +53,11 @@
         src="assets/24156.svg"
         alt=""
       />
-      <i class="fa-solid fa-arrow-down" style="color: #ffffff"></i>
+      <img
+        class="h-10 md:h-14 bottom-20 absolute opacity-40 animate-bounce"
+        src="../assets/arrow-down.svg"
+        alt=""
+      />
     </div>
   </div>
 </section>
@@ -432,12 +439,9 @@
     </div>
   </div>
 
-  <!--Copyright section-->
   <div class="p-4 text-center" style="background-color: rgba(0, 0, 0, 0.2)">
     © 2023 Copyright:
-    <a class="text-whitehite" href="https://tailwind-elements.com/"
-      >Tailwind Elements</a
-    >
+    <a class="text-whitehite" href="">・アニス・(Anis Ghd.)</a>
   </div>
 </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
