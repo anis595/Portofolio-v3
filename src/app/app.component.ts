@@ -11,9 +11,14 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     Aos.init();
   }
-  // hide: boolean = true;
+  toggleMenu() {
+    const menu = document.getElementById('menu');
+    const burger = document.getElementById('burger');
 
-  // func() {
-  //   this.hide = !this.hide;
-  // }
+    if (menu && burger) {
+      menu.classList.toggle('menu-active');
+      burger.classList.toggle('burger-active');
+      console.log('hello');
+    }
+  }
 }
